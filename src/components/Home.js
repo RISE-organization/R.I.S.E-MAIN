@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
   const boxes = [
     {
-      logo: '/rise.png',
+      logo: '/Rise.png',
       title: 'R.I.S.E EDUCATION',
       details: 'منصة تعليمة مزودة بذكاء اصطناعي مخصص .',
       link: 'https://example.com/rise'
