@@ -1,0 +1,89 @@
+:root {
+  --footer-primary: rgba(132, 0, 255, 1);
+  --footer-primary-glow: rgba(132, 0, 255, 0.5);
+  --footer-text: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  width: 100%;
+  height: 40px;
+  z-index: 1700;
+  background: transparent;
+  font-family: 'Saudi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  pointer-events: none;
+}
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--footer-text);
+  font-weight: 400;
+  text-align: center;
+  pointer-events: auto;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.footer-highlight {
+  color: var(--footer-primary);
+  font-weight: 600;
+  text-shadow: 0 0 8px var(--footer-primary-glow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover .footer-highlight {
+  color: #fff;
+  text-shadow: 0 0 12px var(--footer-primary);
+}
+
+.footer-heart {
+  display: inline-block;
+  animation: footerHeartBeat 2.5s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+  margin: 0 2px;
+}
+
+@keyframes footerHeartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    bottom: 10px;
+    height: 40px;
+  }
+
+  .footer-content {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    bottom: 8px;
+    height: 36px;
+    padding: 0 10px;
+  }
+
+  .footer-content {
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 36px;
+    text-align: center;
+  }
+}

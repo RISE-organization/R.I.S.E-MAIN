@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .App {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .App-header {
+    min-height: 100vh;
+    padding: 70px 10px 80px 10px;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
