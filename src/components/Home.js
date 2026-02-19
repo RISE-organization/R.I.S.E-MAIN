@@ -50,7 +50,7 @@ const Home = () => {
       <div className="boxes-grid">
         {boxes.map((box, index) => (
           <div key={index} className="glass-box" onClick={() => handleBoxClick(box.link)} style={{ cursor: 'pointer' }}>
-            <img src={box.logo} alt={box.title} className="box-logo" />
+            <img src={box.logo} alt={box.title} className="box-logo" loading="lazy" />
             <h3 className="box-title">{box.title}</h3>
             <p className="box-details">{box.details}</p>
           </div>

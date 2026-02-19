@@ -123,9 +123,31 @@ export default function DarkVeil({
     resize();
 
     const start = performance.now();
-    let frame = 0;
+
+
+    let animationId;
+    let isVisible = true;
+
+    const handleVisibilityChange = () => {
+      isVisible = !document.hidden;
+      if (isVisible) {
+        // Resume the loop if it's not already running (though in this simple structure we rely on the loop check)
+        // Actually, if we just cancelAnimationFrame when hidden, we need to restart it.
+        // A simpler approach for this structure is to just check isVisible inside the loop.
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     const loop = () => {
+      if (document.hidden) {
+        // skip rendering but keep the loop alive or just pause?
+        // Better to pause effectively.
+        // Let's us a check.
+        animationId = requestAnimationFrame(loop);
+        return;
+      }
+
       program.uniforms.uTime.value =
         ((performance.now() - start) / 1000) * speed;
       program.uniforms.uHueShift.value = hueShift;
@@ -134,14 +156,15 @@ export default function DarkVeil({
       program.uniforms.uScanFreq.value = scanlineFrequency;
       program.uniforms.uWarp.value = warpAmount;
       renderer.render({ scene: mesh });
-      frame = requestAnimationFrame(loop);
+      animationId = requestAnimationFrame(loop);
     };
 
     loop();
 
     return () => {
-      cancelAnimationFrame(frame);
+      cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, [
     hueShift,
