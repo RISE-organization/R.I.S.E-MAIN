@@ -50,6 +50,24 @@ const Members = () => {
                             <p>⚡️</p>
                         </div>
                     </PixelCard>
+                    <PixelCard
+                        variant="white"
+                        href="https://linktr.ee/jempe?fbclid=PAQ0xDSwL8dzFleHRuA2FlbQIxMQABp32NRpmw83fV0wdcrGzrfMQmlAVq6JshMPFMTTrZXk7cEpoMKVyllgtboHxr_aem_NPTAm6q038CB4RpHeI_goA"
+                        className="member-pixel-card"
+                    >
+                        <div className="member-content">
+                            <div className="member-image-container">
+                                <img src="/jempe.png" alt="jempe " className="member-image" loading="lazy" />
+                            </div>
+                            <h4>Jempe.</h4>
+                            <p>---------------------------------------------------------------------------</p>
+                            <p>• Telegram Bots dev. </p>
+                            <p>• Writer and poet.</p>
+                            <p>• Vice President.</p>
+                            <p>• Python dev.</p>
+                            <p>🖤</p>
+                        </div>
+                    </PixelCard>
                 </div>
             </div>
         </div>
