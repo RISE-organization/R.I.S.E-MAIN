@@ -5,39 +5,39 @@ const Home = () => {
   const boxes = [
     {
       logo: '/Rise.png',
-      title: 'R.I.S.E EDUCATION',
-      details: 'منصة تعليمة مزودة بذكاء اصطناعي مخصص .',
+      title: 'SOON !',
+      details: "SOON !",
       link: 'https://example.com/rise'
     },
     {
-      logo: '/Bot.png',
-      title: 'R.I.S.E BOTs',
-      details: 'مجموعات بوتات خدمية و عصرية  مدمجة مع الذكاء الاصطناعي',
-      link: 'https://t.me/riseMean_bot'
+      logo: '/RNOTE.png',
+      title: 'R.NOTE',
+      details: 'منصة لتدوين الملاحظات مدمجة بل ذكاء الاصطناعي',
+      link: 'https://r-note-app.vercel.app/'
     },
     {
-      logo: '/Gpa.png',
+      logo: '/Rise.png',
       title: 'R.I.S.E GPA',
       details: 'منصة لحساب المعدل التراكمي بحسب نظام بولونيا',
       link: 'https://r-i-s-e-gpa.vercel.app/'
     },
     {
       logo: '/assistant.png',
-      title: 'R.I.S.E Assistant',
-      details: 'مساعد شخصي للحاسوب',
+      title: 'SOON !',
+      details: 'SOON !',
       link: 'https://example.com/assistant'
     },
     {
       logo: '/sora.png',
-      title: 'Sora',
-      details: 'soon !',
+      title: 'SOON !',
+      details: 'SOON !',
       link: 'https://example.com/bot'
     },
     {
-      logo: '/security.png',
-      title: 'R.I.S.E Security',
+      logo: '/Bot.png',
+      title: 'SOON !',
       details: 'SOON !',
-      link: 'https://example.com/fahad'
+      link: 'https://t.me/riseMean_bot'
     },
   ];
 

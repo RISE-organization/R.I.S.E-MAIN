@@ -6,12 +6,12 @@ const Members = () => {
         <div style={{ maxHeight: '430px', overflow: 'visible' }}>
             <div className="members-sections">
                 <div className="members-header" style={{ justifyContent: 'center' }}>
-                    <h3 className="group-title management-title">الإدارة</h3>
+                    <h3 className="group-title management-title"></h3>
                 </div>
                 <div className="member-grid" style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    gap: '20px',
+                    gap: '45px',
                     flexWrap: 'wrap'
                 }}>
                     <PixelCard
