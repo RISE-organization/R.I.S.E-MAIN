@@ -6,6 +6,7 @@ const Members = () => {
         <div style={{ maxHeight: '430px', overflow: 'visible' }}>
             <div className="members-sections">
                 <div className="members-header" style={{ justifyContent: 'center' }}>
+                    {/* eslint-disable-next-line jsx-a11y/heading-has-content */}
                     <h2 aria-label="Members section heading" className="group-title management-title"></h2>
                 </div>
                 <div className="member-grid" style={{
