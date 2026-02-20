@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de77441b.css",
+    "main.js": "/static/js/main.64801ac0.js",
+    "static/js/453.96453769.chunk.js": "/static/js/453.96453769.chunk.js",
+    "static/media/SaudiWeb-Bold.woff": "/static/media/SaudiWeb-Bold.fc36b000836904553eba.woff",
+    "static/media/SaudiWeb-Regular.woff": "/static/media/SaudiWeb-Regular.533502feecd373cee545.woff",
+    "static/media/SaudiWeb-Bold.woff2": "/static/media/SaudiWeb-Bold.d71d60c352acdd0538b4.woff2",
+    "static/media/SaudiWeb-Regular.woff2": "/static/media/SaudiWeb-Regular.66549a53dd7dcd9a685d.woff2",
+    "index.html": "/index.html",
+    "main.de77441b.css.map": "/static/css/main.de77441b.css.map",
+    "main.64801ac0.js.map": "/static/js/main.64801ac0.js.map",
+    "453.96453769.chunk.js.map": "/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de77441b.css",
+    "static/js/main.64801ac0.js"
+  ]
+}

@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import './ContentModal.css';
-import PixelCard from './PixelCard';
 import Home from './Home';
 import Member from './Member';
 
