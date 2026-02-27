@@ -19,7 +19,7 @@ const Home = () => {
       logo: '/Rise.png',
       title: 'R.I.S.E GPA',
       details: 'منصة لحساب المعدل التراكمي بحسب نظام بولونيا',
-      link: 'https://r-i-s-e-gpa.vercel.app/'
+      link: 'https://bologna-gpa.vercel.app/'
     },
     {
       logo: '/assistant.png',
